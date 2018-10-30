@@ -13,9 +13,12 @@ sudo apt-get install -y unzip xvfb libxi6 libgconf-2-4 oracle-java8-installer go
 
 #mkdir ./temp && cd ./temp
 
+
 #wget https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip
-#wget https://selenium-release.storage.googleapis.com/3.13/selenium-server-standalone-3.13.0.jar
 #wget https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-linux64.tar.gz
+
+wget https://selenium-release.storage.googleapis.com/3.13/selenium-server-standalone-3.13.0.jar
+
 unzip chromedriver_linux64.zip
 tar zxfv geckodriver-v0.23.0-linux64.tar.gz
 
@@ -25,3 +28,6 @@ sudo mv selenium-server-standalone-3.13.0.jar /usr/bin/selenium-server-standalon
 sudo mv chromedriver /usr/bin/chromedriver
 sudo mv geckodriver /usr/bin/geckodriver
 sudo chmod +x /usr/bin/chromedriver /usr/bin/geckodriver
+
+chromedriver --version
+geckodriver --version
