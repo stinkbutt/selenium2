@@ -9,7 +9,7 @@ sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable
 
 # Install prerequisites
 sudo apt-get update
-sudo apt-get install -y unzip xvfb libxi6 libgconf-2-4 oracle-java8-installer google-chrome-stable firefox openjdk-8-jdk
+sudo apt-get install -y unzip xvfb libxi6 libgconf-2-4 dbus-x11 google-chrome-stable firefox openjdk-8-jdk
 
 #mkdir ./temp && cd ./temp
 
